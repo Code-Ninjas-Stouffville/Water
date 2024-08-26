@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
-        if (x ==0 &&y==0)
+        if (x == 0 && y == 0)
         {
-            Debug.Log("hi");
+            
             playerAnim.SetBool("IsWalking", false);
         }
         else
         {
-            Debug.Log("bye");
+            
             playerAnim.SetBool("IsWalking", true);
             if (x<0)
             {
